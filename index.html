@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework week 4</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8e5771dd0d.js" crossorigin="anonymous">
+    </script> 
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <script src="src/index.js"></script>
+
+
+</head>
+  <body>
+<div class="container">
+      <div class="SearchCity">
+        <div class="row">
+          <div class="col-6">
+<form>
+  <input type="text" id="weather-city" placeholder="Enter a city"/>
+</form>
+                </div>
+            <div class="col-6">
+                <button class="buttonCurrentLocation">
+                <i class="fas fa-map-marker-alt"></i></button>
+                Use current location
+            
+          </div>
+   
+        </div>
+        </div>
+    </br>
+      <h1>Paris</h1>
+      <h4>Monday October 4th</h4>
+      <div class="weatherNow">
+        <div class="row">
+            <div class="col-4">
+                <img src="images/partlycloudy.png" width=150/>
+</div>
+          
+<div class="col-4"><span class="tempNow"> 18°C</span> </div>
+
+            <div class="col-4">
+             <ul>
+                <li> 
+                    High: <span class="tempNowHigh">19°C</span> 
+                </li>
+                 <li>      
+                    Low: <span class="tempNowLow">9°C </span>
+                 </li>
+                 <li>
+                    Precipitation: 10%
+                </li>
+             </ul>
+            </div>
+        </div>
+        </div>  
+  <div class="descriptionNow">
+        <div class="col-4">Partly cloudy</div>
+        <div class="col-4"></div>
+        <div class="col-4"></div>
+      </div>
+
+    <hr>
+    <div class="forecastDate"> 
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-5"> 
+    <div class="col"> 
+      Tue 5
+    </div> 
+    <div class="col"> 
+     Wed 6
+    </div> 
+    <div class="col"> 
+     Thu 7
+    </div> 
+    <div class="col"> 
+      Fri 8
+    </div> 
+    <div class="col"> 
+      Sat 9
+    </div> 
+  </div> 
+</div> 
+    <div class="forecastIcons"> 
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-5"> 
+    <div class="col"> 
+      <img src="images/partlycloudy.png" width=50/>
+    </div> 
+    <div class="col"> 
+      <img src="images/partlycloudy.png" width=50/>
+    </div> 
+    <div class="col"> 
+      <img src="images/partlycloudy.png" width=50/>
+    </div> 
+    <div class="col"> 
+      <img src="images/sunny.png" width=50/>
+    </div> 
+    <div class="col"> 
+      <img src="images/sunny.png" width=50/>
+    </div> 
+  </div> 
+</div> 
+    <div class="forecastTempHigh"> 
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-5"> 
+    <div class="col"> 
+      17°
+    </div> 
+    <div class="col"> 
+      17°
+    </div> 
+    <div class="col"> 
+      19°
+    </div> 
+    <div class="col"> 
+      18°
+    </div> 
+    <div class="col"> 
+      20°
+    </div> 
+  </div> 
+</div> 
+    <div class="forecastTempLow"> 
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-5"> 
+    <div class="col"> 
+      12°
+    </div> 
+    <div class="col"> 
+      10°
+    </div> 
+    <div class="col"> 
+      10°
+    </div> 
+    <div class="col"> 
+      12°
+    </div> 
+    <div class="col"> 
+      12°
+    </div> 
+  </div> 
+</div> 
+</div>
+
+  </body>
+</html>
+

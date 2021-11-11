@@ -1,0 +1,63 @@
+li {
+  list-style: none;
+  text-align: left;
+}
+
+.container {
+  background: #f7f4f7;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 10%;
+  max-width: 60%;
+  font-family: "Space Mono", monospace;
+}
+
+.search {
+  max-width: 100%;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.buttonCurrentLocation {
+  border-radius: 5px;
+  background: #f7f4f7;
+  border: 1px solid #ebe2eb;
+}
+
+.weatherNow {
+  text-align: center;
+}
+
+.tempNow {
+  font-size: 60px;
+  vertical-align: 50%;
+}
+
+.tempNowHigh {
+  color: orange;
+  text-align: right;
+}
+
+.tempNowLow {
+  color: blue;
+}
+
+.forecastDate {
+  text-align: center;
+}
+
+.forecastIcons {
+  text-align: center;
+}
+
+.forecastTempHigh {
+  color: orange;
+  text-align: center;
+}
+
+.forecastTempLow {
+  color: blue;
+  text-align: center;
+  font-size: 12px;
+}
