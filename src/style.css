@@ -62,3 +62,10 @@ li {
   text-align: center;
   font-size: 12px;
 }
+
+footer {
+  font-family: "Space Mono", monospace;
+  font-size: small;
+  text-align: center;
+  margin-top: 10px;
+}
