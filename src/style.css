@@ -35,6 +35,11 @@ li {
   vertical-align: 50%;
 }
 
+.degreeSign {
+  font-size: 60px;
+  vertical-align: 50%;
+}
+
 .tempNowHigh {
   color: orange;
   text-align: right;
