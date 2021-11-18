@@ -44,18 +44,22 @@ li {
   font-size: 9px;
 }
 
+#icon {
+  align-items: left;
+}
+
 .weatherNow {
   text-align: center;
 }
 
 .tempNow {
-  font-size: 50px;
-  vertical-align: 50%;
+  font-size: 40px;
+  vertical-align: -30%;
 }
 
-.degreeSign {
-  font-size: 50px;
-  vertical-align: 50%;
+.units {
+  font-size: 16px;
+  vertical-align: -80%;
 }
 
 .tempNowHigh {
@@ -65,6 +69,9 @@ li {
 
 .tempNowLow {
   color: blue;
+}
+.descriptionNow:first-letter {
+  text-transform: capitalize;
 }
 
 .forecastDate {
