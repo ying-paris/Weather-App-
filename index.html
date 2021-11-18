@@ -13,6 +13,9 @@
       crossorigin="anonymous"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/8e5771dd0d.js" crossorigin="anonymous">
@@ -24,20 +27,26 @@
 </head>
   <body>
 <div class="container">
-      <div class="SearchCity">
-        <div class="row">
-          <div class="col-6">
-<form>
-  <input type="text" id="weather-city" placeholder="Enter a city"/>
+    <div class="wrapper">
+            <div class="searchCity">
+                <div class="row">
+                    <div class="col-9">
+        <form id="search-form">
+
+                    <input type="text" 
+                    id="weather-city"
+                    class="form-control" 
+                    placeholder="Enter a city" 
+                    autocomplete="off"/>
 </form>
                 </div>
-            <div class="col-6">
+            <div class="col-3">
                 <button class="buttonCurrentLocation">
-                <i class="fas fa-map-marker-alt"></i></button>
-                Use current location
+                <i class="fas fa-map-marker-alt" style="font-size:26px;color:grey"></i></button>
+                <span id="geoLocalisation">Current location</span>
             
           </div>
-   
+ 
         </div>
         </div>
     </br>
@@ -46,7 +55,9 @@
       <div class="weatherNow">
         <div class="row">
             <div class="col-4">
-                <img src="images/partlycloudy.png" width=150/>
+                <img src="images/partlycloudy.png" 
+                id="icon"
+                width=150/>
 </div>
           
 <div class="col-4"><span class="tempNow"> 18 </span><span class="degreeSign">°C </span> </div>
@@ -149,6 +160,7 @@
     </div> 
   </div> 
 </div> 
+</div>
 </div>
 <footer> <a href="https://github.com/ying-paris/Weather-App-" target="blank" >Open source code</a> by Ying Ye
 

@@ -1,29 +1,47 @@
+body {
+  background: linear-gradient(to top, #f1eeee 100%, #e6dadb 0%);
+}
+
 li {
   list-style: none;
   text-align: left;
   font-size: 14px;
 }
 
-.container {
-  background: #f7f4f7;
-  border: 2px solid black;
+.wrapper {
+  background: white;
+  max-width: 600px;
+  margin: 0 auto;
+  border: 2px solid rgb(0, 0, 0);
   border-radius: 5px;
-  padding: 10px;
+  padding: 20px;
   margin-top: 10%;
-  max-width: 60%;
-  font-family: "Space Mono", monospace;
+}
+
+.container {
+  font-family: "Raleway", sans-serif;
+}
+
+.weather-city {
+  border-radius: 10px;
+  width: 100%;
 }
 
 .search {
-  max-width: 100%;
   border-radius: 10px;
   margin: 5px;
 }
 
 .buttonCurrentLocation {
   border-radius: 5px;
-  background: #f7f4f7;
-  border: 1px solid #ebe2eb;
+  border: 1px solid white;
+  background-color: white;
+  padding-right: 0%;
+  padding-left: 0%;
+}
+
+#geoLocalisation {
+  font-size: 9px;
 }
 
 .weatherNow {
@@ -31,12 +49,12 @@ li {
 }
 
 .tempNow {
-  font-size: 60px;
+  font-size: 50px;
   vertical-align: 50%;
 }
 
 .degreeSign {
-  font-size: 60px;
+  font-size: 50px;
   vertical-align: 50%;
 }
 
