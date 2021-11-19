@@ -102,7 +102,7 @@ button.addEventListener("click", getCurrentPosition);
 
 function displayFahrenheitTemperature(event) {
   event.preventDefault();
-  let temperatureElement = document.querySelector("#tempNow");
+  let temperatureElement = document.querySelector(".tempNow");
 
   celsiusLink.classList.remove("active");
   fahrenheitLink.classList.add("active");
@@ -114,7 +114,7 @@ function displayCelsiusTemperature(event) {
   event.preventDefault();
   celsiusLink.classList.add("active");
   fahrenheitLink.classList.remove("active");
-  let temperatureElement = document.querySelector("#tempNow");
+  let temperatureElement = document.querySelector(".tempNow");
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
 

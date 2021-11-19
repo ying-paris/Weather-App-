@@ -54,16 +54,16 @@ hr.divider {
   display: block;
 }
 
-.weatherNow {
+.weatherUnit {
   text-align: center;
 }
 
-.weatherNow.active {
+.weatherUnit .active {
   color: black;
   cursor: default;
 }
 
-.weatherNow.active:hover {
+.weatherUnit .active:hover {
   text-decoration: none;
 }
 
