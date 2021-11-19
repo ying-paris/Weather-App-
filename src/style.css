@@ -8,8 +8,9 @@ li {
   font-size: 14px;
 }
 
-hr {
-  margin-top: 0px;
+hr.divider {
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 
 .wrapper {
@@ -49,12 +50,21 @@ hr {
 }
 
 #icon {
-  padding-bottom: 0px;
-  margin-bottom: 0px;
+  margin: 0px 0px 0px 0px;
+  display: block;
 }
 
 .weatherNow {
   text-align: center;
+}
+
+.weatherNow.active {
+  color: black;
+  cursor: default;
+}
+
+.weatherNow.active:hover {
+  text-decoration: none;
 }
 
 .tempNow {

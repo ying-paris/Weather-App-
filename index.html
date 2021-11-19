@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,46 +13,41 @@
       crossorigin="anonymous"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/8e5771dd0d.js" crossorigin="anonymous">
     </script> 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-
-
-
 </head>
-  <body>
+<body>
 <div class="container">
     <div class="wrapper">
             <div class="searchCity">
                 <div class="row">
                     <div class="col-9">
-        <form id="search-form">
+                        <form id="search-form">
 
-                    <input type="text" 
-                    id="weather-city"
-                    class="form-control" 
-                    placeholder="Enter a city" 
-                    autocomplete="off"/>
-</form>
+                        <input type="text" 
+                        id="weather-city"
+                        class="form-control" 
+                        placeholder="Enter a city" 
+                        autocomplete="off"/>
+                        </form>
+                    </div>
+                    <div class="col-3">
+                    <button class="buttonCurrentLocation">
+                    <i class="fas fa-map-marker-alt" style="font-size:26px;color:grey"></i></button>
+                    <span id="geoLocalisation">Current location</span>
+                    </div>
                 </div>
-            <div class="col-3">
-                <button class="buttonCurrentLocation">
-                <i class="fas fa-map-marker-alt" style="font-size:26px;color:grey"></i></button>
-                <span id="geoLocalisation">Current location</span>
-            
-          </div>
- 
-        </div>
-        </div>
-    </br>
-      <h1>Paris</h1>
-      <h4>Monday October 4th</h4>
-      <div class="weatherNow">
+            </div>
+</br>
+<h1>Paris</h1>
+<h4>Monday October 4th</h4>
+<div class="weatherNow">
         <div class="row">
             <div class="col-4">
                 <img src="images/partlycloudy.png" 
@@ -61,113 +56,118 @@
                 style="float: left; margin: 0px 15px 15px 0px;"/>
             </div>
 
-<div class="col-4">
-   <div class="d-flex justify-content-center">
-        <span class="tempNow">18</span>
-         <span class="units"><a href="#" id="celsius-link" class="active">°C</a> |
+            <div class="col-4">
+                <div class="d-flex justify-content-center">
+                <span class="tempNow">18</span>
+                <span class="units"><a href="#" id="celsius-link" class="active">°C</a> |
                     <a href="#" id="fahrenheit-link">°F</a></span>
-            </span></div></div>
+                </span>
+                </div>
+            </div>
             <div class="col-4">
                 <div class="weatherDetails">
-             <ul>
-                <li> 
-                </li>
-                <li> 
+                <ul>
+                    <li> 
+                    </li>
+                    <li> 
                     High: <span class="tempNowHigh">19</span>°C 
-                </li>
-                 <li>      
+                    </li>
+                    <li>      
                     Low: <span class="tempNowLow">9 </span>°C
-                 </li>
-                 <li>
+                    </li>
+                    <li>
                     Humidity: <span class="humidity"> 10 </span>%
-                </li>
-             </ul>
-            </div></div>
+                    </li>
+                </ul>
+                </div>
+            </div>
         </div>
-        </div>  
-        <div class="descriptionNow">Partly cloudy</div>
-    <hr>
+    </div>  
+    <div class="descriptionNow">
+        Partly cloudy
+    </div>
+<hr class="divider">
     <div class="forecastDate"> 
-  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-5"> 
-    <div class="col"> 
-      Tue 5
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-5"> 
+            <div class="col"> 
+                Tue 5
+            </div> 
+            <div class="col"> 
+                Wed 6
+            </div> 
+            <div class="col"> 
+                Thu 7
+            </div> 
+            <div class="col"> 
+                Fri 8
+            </div> 
+            <div class="col"> 
+                Sat 9
+            </div> 
+        </div> 
     </div> 
-    <div class="col"> 
-     Wed 6
-    </div> 
-    <div class="col"> 
-     Thu 7
-    </div> 
-    <div class="col"> 
-      Fri 8
-    </div> 
-    <div class="col"> 
-      Sat 9
-    </div> 
-  </div> 
-</div> 
     <div class="forecastIcons"> 
-  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-5"> 
-    <div class="col"> 
-      <img src="images/partlycloudy.png" width=50/>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-5"> 
+            <div class="col"> 
+                <img src="images/partlycloudy.png" width=50/>
+            </div> 
+            <div class="col"> 
+                <img src="images/partlycloudy.png" width=50/>
+            </div> 
+            <div class="col"> 
+                <img src="images/partlycloudy.png" width=50/>
+            </div> 
+            <div class="col"> 
+                <img src="images/sunny.png" width=50/>
+            </div> 
+            <div class="col"> 
+                <img src="images/sunny.png" width=50/>
+            </div> 
+        </div> 
     </div> 
-    <div class="col"> 
-      <img src="images/partlycloudy.png" width=50/>
-    </div> 
-    <div class="col"> 
-      <img src="images/partlycloudy.png" width=50/>
-    </div> 
-    <div class="col"> 
-      <img src="images/sunny.png" width=50/>
-    </div> 
-    <div class="col"> 
-      <img src="images/sunny.png" width=50/>
-    </div> 
-  </div> 
-</div> 
     <div class="forecastTempHigh"> 
-  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-5"> 
-    <div class="col"> 
-      17°
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-5"> 
+                <div class="col"> 
+                    17°
+                </div> 
+                <div class="col"> 
+                    17°
+                </div> 
+                <div class="col"> 
+                    19°
+                </div> 
+                <div class="col"> 
+                    18°
+                </div> 
+                <div class="col"> 
+                    20°
+                </div> 
+            </div> 
     </div> 
-    <div class="col"> 
-      17°
-    </div> 
-    <div class="col"> 
-      19°
-    </div> 
-    <div class="col"> 
-      18°
-    </div> 
-    <div class="col"> 
-      20°
-    </div> 
-  </div> 
-</div> 
     <div class="forecastTempLow"> 
-  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-5"> 
-    <div class="col"> 
-      12°
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-5"> 
+                <div class="col"> 
+                    12°
+                </div> 
+                <div class="col"> 
+                    10°
+                </div> 
+                <div class="col"> 
+                    10°
+                </div> 
+                <div class="col"> 
+                    12°
+                </div> 
+                <div class="col"> 
+                    12°
+                </div> 
+            </div> 
     </div> 
-    <div class="col"> 
-      10°
-    </div> 
-    <div class="col"> 
-      10°
-    </div> 
-    <div class="col"> 
-      12°
-    </div> 
-    <div class="col"> 
-      12°
-    </div> 
-  </div> 
-</div> 
 </div>
 </div>
-<footer> <a href="https://github.com/ying-paris/Weather-App-" target="blank" >Open source code</a> by Ying Ye
-
+<footer> 
+    <a href="https://github.com/ying-paris/Weather-App-" target="blank" >Open source code</a> by Ying Ye
 </footer>
 <script src="src/index.js"></script>
-  </body>
+</body>
 </html>
