@@ -91,18 +91,15 @@ hr.divider {
 
 .forecastDate {
   text-align: center;
+  font-size: 16px;
 }
 
-.forecastIcons {
-  text-align: center;
-}
-
-.forecastTempHigh {
+.forecastDateTemperaturesHigh {
   color: orange;
   text-align: center;
 }
 
-.forecastTempLow {
+.forecastDateTemperaturesLow {
   color: blue;
   text-align: center;
   font-size: 12px;
