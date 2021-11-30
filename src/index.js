@@ -67,7 +67,7 @@ function displayForecast(response) {
 
   let forecastHTML = ` <div class="row">`;
   forecast.forEach(function (forecastDay, index) {
-    if (index < 5) {
+    if (index < 6) {
       forecastHTML =
         forecastHTML +
         `
@@ -84,7 +84,7 @@ function displayForecast(response) {
                     <span class="forecastDateTemperaturesHigh">${Math.round(
                       forecastDay.temp.max
                     )}°
-                    }</span>
+                    </span>
                     <span class="forecastDateTemperaturesLow">${Math.round(
                       forecastDay.temp.min
                     )}°</span>
@@ -156,28 +156,4 @@ function getCurrentPosition(event) {
 let button = document.querySelector(".buttonCurrentLocation");
 button.addEventListener("click", getCurrentPosition);
 
-function displayFahrenheitTemperature(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector(".tempNow");
-
-  celsiusLink.classList.remove("active");
-  fahrenheitLink.classList.add("active");
-  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
-  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
-}
-
-function displayCelsiusTemperature(event) {
-  event.preventDefault();
-  celsiusLink.classList.add("active");
-  fahrenheitLink.classList.remove("active");
-  let temperatureElement = document.querySelector(".tempNow");
-  temperatureElement.innerHTML = Math.round(celsiusTemperature);
-}
-
-let celsiusTemperature = null;
-
-let fahrenheitLink = document.querySelector("#fahrenheit-link");
-fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
-
-let celsiusLink = document.querySelector("#celsius-link");
-celsiusLink.addEventListener("click", displayCelsiusTemperature);
+search("New York");

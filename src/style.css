@@ -58,15 +58,6 @@ hr.divider {
   text-align: center;
 }
 
-.weatherUnit .active {
-  color: black;
-  cursor: default;
-}
-
-.weatherUnit .active:hover {
-  text-decoration: none;
-}
-
 .tempNow {
   font-size: 50px;
   vertical-align: -30%;
