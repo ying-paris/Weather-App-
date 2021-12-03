@@ -67,7 +67,7 @@ function displayForecast(response) {
 
   let forecastHTML = ` <div class="row">`;
   forecast.forEach(function (forecastDay, index) {
-    if (index < 6) {
+    if (index > 0 && index < 7) {
       forecastHTML =
         forecastHTML +
         `
@@ -138,6 +138,12 @@ function displayWeather(response) {
   getForecast(response.data.coord);
 }
 
+function search(city) {
+  let apiKey = "876d2525e17a4036902a2d9f29fb5837";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayWeather);
+}
+
 function showPosition(position) {
   let latitude = position.coords.latitude;
   let longitude = position.coords.longitude;
@@ -156,4 +162,4 @@ function getCurrentPosition(event) {
 let button = document.querySelector(".buttonCurrentLocation");
 button.addEventListener("click", getCurrentPosition);
 
-search("New York");
+search("Paris");
